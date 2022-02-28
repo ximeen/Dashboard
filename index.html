@@ -2,15 +2,82 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-      <!-- META DATAS -->
+    <!-- META DATAS -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name = "description" content="This a simple aplication the dashboard admin."/>
+    <meta
+      name="description"
+      content="This a simple aplication the dashboard admin."
+    />
+
+    <link rel="stylesheet" href="./Scss/Global.scss">
 
     <title>Dashboard</title>
-
   </head>
   <body>
-    <script type="module" src="/main.js"></script>
+    <div class="Container">
+      <div class="Navgation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="logo-bitcoin"></ion-icon></span>
+              <span class="title">Bios</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="home-outline"></ion-icon> </span>
+              <span class="title">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+              <span class="title">Customers</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+              <span class="title">Message</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+              <span class="title">Help</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+              <span class="title">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+              <span class="title">Password</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="exit-outline"></ion-icon></span>
+              <span class="title">Sign out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module" src="./Utils/Script.js"></script>
   </body>
 </html>

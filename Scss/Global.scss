@@ -1,7 +1,20 @@
 
-  // RESETS
+  // IMPORT FONTS BY GOOGLE FONTS
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+ 
+ @import 'Navegation';
+
+
+ // RESETS
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
 }
