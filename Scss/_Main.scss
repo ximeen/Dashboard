@@ -69,6 +69,8 @@
         }
       }
 
+      
+
     }
 
     .User {
@@ -104,11 +106,48 @@
       position: relative;
       background-color: #fff;
       padding: 2rem;
+      border-radius: 1.1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+
       box-shadow: 0 .5rem 1.2rem rgba(0, 0, 0, 0.08);
+
+      &:hover {
+        background-color: $blue;
+      }
+
+      .Numbers{
+
+        position: relative;
+        font-weight: 500;
+        font-size: 2.5rem;
+        color: $blue;
+      }
+
+      .CardName {
+        color: $black2;
+        font-size: 1.2rem;
+      }
+    }
+
+    ion-icon {
+      font-size: 2rem;
+      color: $black3;
+
+      
     }
   }
 
 }
+
+  // HOVER TO CARD
+  .CardBox .Card:hover .Numbers, .CardBox .Card:hover .CardName,.CardBox .Card:hover ion-icon {
+    color: #fff;
+  }
+
+
   // STYLE FOR THE MENU CLICK
 .main.active{
  width: calc(100% - 80px);
