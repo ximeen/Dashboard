@@ -6,7 +6,7 @@
 
 .Navgation {
   position: fixed;
-  width: 18.5rem;
+  width: 19rem;
   height:100%;
 
   background: $blue;
@@ -45,6 +45,7 @@
         &:hover{
           color: $blue
         }
+        
         // CLASS ICON 
         .icon {
           position: relative;
@@ -85,7 +86,16 @@
   
 }
 
-.Navgation ul li:hover a::before{
+.Navgation ul li.hovered{
+  background: $white;
+}
+
+.Navgation ul li.hovered a {
+  color: $blue;
+}
+
+.Navgation ul li:hover a::before,
+.Navgation ul li.hovered a::before{
     content: '';
     position:absolute;
     right: 0;
@@ -98,7 +108,8 @@
     box-shadow: 2rem 2rem 0 .6rem $white;
 }
 
-.Navgation ul li:hover a::after{
+.Navgation ul li:hover a::after,
+.Navgation ul li.hovered a::after{
   content: '';
   position:absolute;
   right: 0;
@@ -109,4 +120,13 @@
   background: transparent;
   border-radius: 50%;
   box-shadow: 2rem -2rem 0 .6rem $white;
+}
+
+
+
+// HIDDEN MENU HAMBURGUER
+
+.Navgation.active {
+  transition: all .6s ease;
+  width: 4.75rem; 
 }
