@@ -101,7 +101,7 @@
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: .7rem;
+    grid-gap: .7rem;
     .Card {
       position: relative;
       background-color: #fff;

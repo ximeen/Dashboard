@@ -1,0 +1,182 @@
+@import 'Colors';
+
+
+  .Details{
+    position: relative;
+    width: 100%;
+    padding: 1.2rem;
+
+    display: grid;
+    grid-template-columns:2fr 1fr;
+    gap: 2rem;
+
+
+
+      .CardHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        h2{
+          font-weight: 600;
+          color: $blue;
+        }
+
+        .button{
+          text-decoration: none;
+          font-weight: 500;
+          padding: .7rem 1.5rem;
+
+          background:$blue;
+          color: $white;
+          border-radius: 1rem;
+
+          transition: all .2s ease;
+          &:hover{
+            transform: scale(1.05)
+          }
+
+        }
+      }
+
+        // TABLE STYLES
+      .table{
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: .6rem;
+
+
+        thead td{
+          font-size: 1.1rem;
+          font-weight: bold;
+        }
+
+        td {
+          padding: .8rem;
+        }
+
+        td:last-child{
+          text-align: end;
+        }
+
+        td:nth-child(2){
+          text-align: center;
+        }
+
+        td:nth-child(3){
+          text-align: center;
+        }
+
+        tr{
+          color: $black3;
+          border-bottom: 1px solid rgba(0,0,0,.1);
+        }
+
+        tr:last-child{
+          border-bottom: none;
+        }
+
+        tbody tr{
+          
+          &:hover{
+            background-color: $blue;
+            color: $white;
+            border-radius: 1rem;
+
+          }
+        } 
+
+        .status.delivered{
+          padding: .5rem;
+          background-color: #8de02c;
+          font-weight: 500;
+          color: $white;
+          border-radius: 1rem;
+
+        }
+
+        .status.pending{
+          padding: .5rem;
+          background-color: #f9c94f;
+          font-weight: 500;
+          color: $white;
+          border-radius: 1rem;
+
+        }
+
+        .status.return{
+          padding: .5rem;
+          background-color: #f00;
+          font-weight: 500;
+          color: $white;
+          border-radius: 1rem;
+
+        }
+
+        .status.inprogress{
+          padding: .5rem;
+          background-color: #1795ce;
+          font-weight: 500;
+          color: $white;
+          border-radius: 1rem;
+
+        }
+
+        
+        
+      }
+    }
+
+    .RecentOrder{
+      position: relative;
+      width: 100%;
+      
+      display: grid;
+      min-height: 31.25rem;
+      box-shadow: 0 7px 25px rgba(0,0,0, 0.08);
+      padding: 1.2rem;
+      border-radius: 2rem;
+      background-color: $white;
+  }
+
+
+  // Other table New users
+
+  .NewCustomers{
+    display:grid;
+    position: relative;
+    min-height: 31.75rem;
+    padding: 1.1rem;
+
+    background-color: #fff;
+    box-shadow: 0 7px 25px rgba(0,0,0, 0.1);
+    border-radius: 1rem;
+
+    .ImgBox{
+      position: relative;
+      width: 2.5rem;
+      height: 2.5rem;
+      overflow: hidden;
+      border-radius: 50%;
+
+
+      img {
+        position: absolute;
+        
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+
+    }
+
+    .TableCustomers tr:hover{
+
+
+  
+        background: $blue;
+        color: $white;
+      
+    }
+  }
