@@ -141,8 +141,14 @@
 
 
   // Other table New users
+  table{
+    border-collapse: collapse;
+
+  }
 
   .NewCustomers{
+    border-collapse: collapse;
+
     display:grid;
     position: relative;
     min-height: 31.75rem;
@@ -170,13 +176,26 @@
 
 
     }
+    
+      .TableCustomers {
 
-    .TableCustomers tr:hover{
+        tr h4{
+          font-size: 1rem;
+          font-weight: 500;
+          line-height: 1.1rem;
+        }
 
+        tr td {
+          padding: .7rem  .5rem;
+        }
 
-  
-        background: $blue;
-        color: $white;
+        tr:hover{
+          background: $blue;
+          color: $white;
+
+        }
       
     }
   }
+
+  

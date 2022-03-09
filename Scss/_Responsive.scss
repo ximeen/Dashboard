@@ -1,0 +1,93 @@
+  @media screen and (max-width:995px){
+
+    
+    .Navgation{ 
+      left: -300px;
+    }
+
+    .Navgation.active{
+      left: 0;
+      width: 100vw;
+    }
+    .main{
+      width: 100%;
+      left:0;
+     
+      .CardBox{
+        grid-template-columns: repeat(2, 1fr);
+  
+      }
+    }
+
+    .main.active{
+      left:300px;
+      grid-template-columns: repeat(1, 1fr);
+        
+      
+    }
+
+  }
+
+  @media screen and (max-width:768px){
+
+    body{
+      overflow-x:hidden;
+    }
+    .Navgation{
+
+      ul{
+        width: 46%;
+      }
+    }
+    
+
+    .Details{
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .RecentOrder{
+      overflow-x:Auto;
+    }
+
+    .status{
+      white-space:nowrap;
+    }
+
+    .NewCustomers{
+
+  
+      .ImgBox{
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        overflow: hidden;
+        border-radius: 50%;
+  
+  
+        img {
+          position: absolute;
+          
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+  
+  
+      }
+      
+        .TableCustomers {
+  
+          tr h4{
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1.1rem;
+          }
+  
+          tr td {
+            padding: .7rem  .5rem;
+          }
+
+      }
+    }
+  
+  }

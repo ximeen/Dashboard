@@ -6,7 +6,7 @@
   @import 'Navegation';
   @import 'Main';
   @import 'Table';
-  
+  @import 'Responsive';
 
  // RESETS
 * {
@@ -16,7 +16,7 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-body {
+body{
   min-height: 100vh;
   overflow-x: hidden;
 }
